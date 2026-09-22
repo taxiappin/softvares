@@ -1,0 +1,6 @@
+{
+  "name": "Softvares - Software Engineering & Backend CMS",
+  "description": "Custom web apps, mobile apps, AI features, and cloud platforms with a dedicated /backend management page to edit all elements, logo, and theme colors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

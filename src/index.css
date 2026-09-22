@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --white: #ffffff;
+    --g50: #f5f6f8;
+    --g100: #eceef2;
+    --g200: #dde1e8;
+    --line: #d5dae3;
+    --ink: #141821;
+    --ink-2: #1d2330;
+    --muted: #545c6d;
+    --cobalt: #1b4dff;
+    --cobalt-d: #1238d1;
+    --coral: #f0492f;
+    --teal: #0a9b8b;
+    --amber: #f2a900;
+    --violet: #7a45e5;
+    --font-d: 'Bricolage Grotesque', system-ui, sans-serif;
+    --font-b: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+    --font-m: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+    --r: 8px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 84px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--white);
+    color: var(--ink);
+    font-family: var(--font-b);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-d);
+    letter-spacing: -0.025em;
+    line-height: 1.08;
+  }
+}
+
+/* Custom scrollbar and animations */
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes pipelineFlow {
+  to { stroke-dashoffset: -9; }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 0.9s linear infinite;
+}
+
+.animate-pipeline {
+  stroke-dasharray: 4 5;
+  animation: pipelineFlow 1.1s linear infinite;
+}
+
